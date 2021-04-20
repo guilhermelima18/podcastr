@@ -1,0 +1,14 @@
+.header {
+  background-color: var(--white);
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-100);
+
+  span {
+    text-transform: capitalize;
+  }
+}
