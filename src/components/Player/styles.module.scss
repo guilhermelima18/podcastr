@@ -27,6 +27,27 @@
      opacity: 0.5;
    }
   }
+
+  .currentEpisode {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      border-radius: 1.2rem;
+      width: 15rem;
+      height: 10rem;
+    }
+
+    strong {
+      color: var(--white);
+      margin: 10px 0;
+    }
+
+    strong + strong {
+      font-size: 0.8rem;
+    }
+  }
 }
 
 .emptyPlayer {
@@ -76,11 +97,20 @@
     border: 0;
     font-size: 0;
 
+    &:disabled {
+      cursor: not-allowed;
+    }
+
     &.playButton {
       width: 4rem;
       height: 4rem;
       border-radius: 1rem;
       background: var(--purple-400);
+      transition: 400ms;
+
+      &:hover {
+        filter: brightness(0.7);
+      }
     }
   }
 }
